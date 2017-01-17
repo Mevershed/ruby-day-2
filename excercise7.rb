@@ -21,8 +21,12 @@ students.each do |cohort, size|
   puts "#{cohort} : #{size}"
 end
 
-students.delete(2)
+students.delete(:cohort2)
+
 
 students.each do |cohort, size|
   puts "#{cohort} : #{size}"
+end
+
+students.map { |cohort, size| [:size]  }.sum
 end
