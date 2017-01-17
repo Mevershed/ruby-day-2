@@ -18,3 +18,14 @@ if grocery_list.include?("banana")
 else
   puts "You need to pick up bananas"
 end
+
+p grocery_list[1]
+
+grocery_list.sort.each do |value|
+  puts "* #{value}"
+end
+
+grocery_list.delete("salmon")
+grocery_list.each do |value|
+  puts "* #{value}"
+end
